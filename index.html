@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um bot que irá moderar e deixar a sua comunidade segura.">
     <title>AstroBot - Modere de forma astral a sua comunidade no Discord.</title>
-    <link rel="stylesheet" type="text/css" href="style.css"
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <header class="cabecalho">
-      <img class="cabecalho-imagem" src="logo.png" alt="Logo da comunidade Astro" height="100" width="100">
-      <nav class="cabecalho-menu">
+      <img class="cabecalho-imagem" src="logo.png" alt="Logo da comunidade Astro" height="100" width="100" data-aos="fade">
+      <nav class="cabecalho-menu" data-aos="fade-left">
         <a class="cabecalho-menu-item" href="https://github.com/anthonnysun">Astro Community</a>
         <a class="cabecalho-menu-item">Tutorial</a>
         <a class="cabecalho-menu-item">Open Source</a>
@@ -23,14 +24,14 @@
     <main class="conteudo">
         <section class="conteudo-principal">
           <div class="conteudo-principal-escrito">
-            <h1 class="conteudo-principal-escrito-titulo">AstroBot</h1>
-            <h2 class="conteudo-principal-escrito-subtitulo">De uma forma Astral, ele irá moderar a sua comunidade no Discord.</h2>
-            <button class="conteudo-principal-escrito-botao">Invite Astro</button>
+            <h1 class="conteudo-principal-escrito-titulo" data-aos="fade">AstroBot</h1>
+            <h2 class="conteudo-principal-escrito-subtitulo" data-aos="fade-right">De uma forma Astral, ele irá moderar a sua comunidade no Discord.</h2>
+            <button class="conteudo-principal-escrito-botao" data-aos="fade">Invite Astro</button>
           </div>
-          <img class="conteudo-principal-imagem" src="logomain.png" alt="Imagem do Astro" height="700" width="700">
+          <img class="conteudo-principal-imagem" src="logomain.png" alt="Imagem do Astro" height="700" width="700" data-aos="fade-left">
         </section>
 
-        <section class="conteudo-secundario">
+        <section class="conteudo-secundario" data-aos="fade-down">
           <h3 class="conteudo-secundario-titulo">Qual a missão dele ?</h3>
           <p class="conteudo-secundario-paragrafo">1. Criar um <strong>sistema de verificação</strong> captcha para novos membros garantirem que não são robôs</p>
           <p class="conteudo-secundario-paragrafo">2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
@@ -39,8 +40,14 @@
     </main>
 
   <footer class="rodape">
-    <img class="rodape-imagem" src="astro.png" alt="Astro Letras"> 
+    <img class="rodape-imagem" src="astro.png" alt="Astro Letras" data-aos="fade"> 
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1700
+    });
+  </script>
 </body>
 
 </html>
